@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rate Punk Webpage
 
-## Getting Started
+## Description
 
-First, run the development server:
+This repository contains a React application featuring a form component that enables users to input their email addresses for referral purposes. The form validates the email addresses before submission and sends them to JSONBIN. Last email will be overwritten with the new one. Upon successful submission, the form provides users with a referral link to share.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Components
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Form
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Component responsible for handling user input, submission, and displaying success/error messages.
+- Users can input their email address to receive a referral link.
+- Validates the email address before submission.
+- Sends the email to JSONBIN, overwriting last existing.
+- Upon successful submission, provides the user with a referral link to share.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+To run the application, follow these steps:
 
-To learn more about Next.js, take a look at the following resources:
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Run `npm install` to install dependencies.
+4. Run `npm run dev` to start the development server.
+5. Access the application in your browser at the specified localhost address.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js
+- TypeScript
+- Axios
+- SCSS
