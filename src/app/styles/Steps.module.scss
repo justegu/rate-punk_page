@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin: 48px 0;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .step {
+      color: #4eb3e3;
+      text-transform: uppercase;
+      font: normal normal bold 16px/24px Gadugi;
+      letter-spacing: 1.28px;
+
+      margin-top: 32px;
+    }
+    .main_text {
+      font-size: 32px;
+      font-family: "Caveat Brush", cursive;
+      letter-spacing: 0px;
+      color: #1f343e;
+      text-transform: uppercase;
+      margin: 16px 0;
+    }
+    .body_text {
+      font-size: 16px;
+      font-family: "Noto Sans", sans-serif;
+      letter-spacing: 0px;
+      color: #1f343e;
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    .card {
+      flex-direction: row;
+      gap: 48px;
+
+      & > div {
+        text-align: left;
+      }
+
+      &:nth-of-type(2) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+}

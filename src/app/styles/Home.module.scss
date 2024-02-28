@@ -1,0 +1,21 @@
+.main {
+  padding: 32px 16px;
+  background: #f8cc5d 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  border-top: none;
+
+  .width {
+    display: flex;
+    flex-direction: column;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    .width {
+      flex-direction: row;
+      gap: 136px;
+    }
+  }
+}
